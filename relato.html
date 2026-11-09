@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enviar relato | Conecta</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="js/main.js" defer></script>
+    <script src="js/relatos.js" defer></script>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                conecta<span>.</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="conheca.html">Conheça o bullying</a></li>
+                <li><a href="ajuda.html">Como ajudar</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="mural.html">Mural</a></li>
+                <li><a href="login.html" class="nav-login">Área da escola</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section class="report-hero">
+
+            <div class="container">
+
+                <span class="tag">UM ESPAÇO DE ACOLHIMENTO</span>
+
+                <h1>
+                    Sua voz importa.
+                    <span>Estamos aqui para ouvir.</span>
+                </h1>
+
+                <p>
+                    Conte o que está acontecendo. Você pode fazer
+                    um relato anônimo ou escolher se identificar.
+                    Pedir ajuda é um passo importante.
+                </p>
+
+                <div class="report-trust">
+                    <span>🔒</span>
+                    <p>Relatos são informações privadas e não devem ser publicados no site.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FORMULÁRIO -->
+        <section class="report-section section">
+
+            <div class="container report-layout">
+
+                <div class="report-info">
+
+                    <span class="tag">ANTES DE COMEÇAR</span>
+
+                    <h2>Estamos aqui para ajudar.</h2>
+
+                    <p>
+                        Preencha as informações que conseguir.
+                        Não precisa escrever tudo perfeitamente.
+                        O mais importante é contar o que aconteceu.
+                    </p>
+
+                    <div class="report-info-card">
+                        <span>💜</span>
+                        <div>
+                            <h3>Você não está sozinho</h3>
+                            <p>
+                                Pedir ajuda não é motivo de vergonha.
+                                Ninguém merece sofrer violência.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="report-info-card">
+                        <span>📝</span>
+                        <div>
+                            <h3>Conte no seu tempo</h3>
+                            <p>
+                                Descreva a situação com suas palavras.
+                                Você não precisa enfrentar isso sozinho.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="report-info-card">
+                        <span>🔐</span>
+                        <div>
+                            <h3>Privacidade é importante</h3>
+                            <p>
+                                As informações devem ser acessadas
+                                somente por profissionais autorizados.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="report-form-card">
+
+                    <div class="report-form-heading">
+                        <h2>Formulário de relato</h2>
+                        <p>Os campos com * são obrigatórios.</p>
+                    </div>
+
+
+                    <form id="report-form">
+
+                        <!-- IDENTIFICAÇÃO -->
+                        <div class="form-group">
+
+                            <label>Como deseja fazer seu relato? *</label>
+
+                            <div class="report-options">
+
+                                <label class="report-option">
+                                    <input
+                                        type="radio"
+                                        name="identificacao"
+                                        value="anonimo"
+                                        checked
+                                    >
+
+                                    <span>
+                                        <strong>🔒 Anônimo</strong>
+                                        <small>Não informar minha identidade.</small>
+                                    </span>
+                                </label>
+
+
+                                <label class="report-option">
+                                    <input
+                                        type="radio"
+                                        name="identificacao"
+                                        value="identificado"
+                                    >
+
+                                    <span>
+                                        <strong>👤 Identificado</strong>
+                                        <small>Quero informar quem sou.</small>
+                                    </span>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DADOS DE IDENTIFICAÇÃO -->
+                        <div id="identification-fields" class="identification-fields" hidden>
+
+                            <div class="form-group">
+
+                                <label for="report-name">Seu nome</label>
+
+                                <input
+                                    type="text"
+                                    id="report-name"
+                                    name="nome"
+                                    placeholder="Digite seu nome"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="report-email">E-mail para contato</label>
+
+                                <input
+                                    type="email"
+                                    id="report-email"
+                                    name="email"
+                                    placeholder="Digite seu e-mail"
+                                >
+
+                            </div>
+
+                            <p class="form-hint">
+                                Informe somente os dados que desejar.
+                                A escola deverá explicar como utilizará
+                                essas informações.
+                            </p>
+
+                        </div>
+
+
+                        <!-- TIPO DE SITUAÇÃO -->
+                        <div class="form-group">
+
+                            <label for="report-type">Que tipo de situação aconteceu? *</label>
+
+                            <select id="report-type" name="tipo" required>
+
+                                <option value="">Selecione uma opção</option>
+
+                                <option value="fisico">Agressão física</option>
+
+                                <option value="verbal">Ofensas e humilhações</option>
+
+                                <option value="psicologico">Intimidação ou ameaça</option>
+
+                                <option value="social">Exclusão ou isolamento</option>
+
+                                <option value="cyberbullying">Cyberbullying</option>
+
+                                <option value="outro">Outra situação</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- LOCAL -->
+                        <div class="form-group">
+
+                            <label for="report-place">Onde aconteceu? *</label>
+
+                            <select id="report-place" name="local" required>
+
+                                <option value="">Selecione o local</option>
+
+                                <option value="sala">Sala de aula</option>
+
+                                <option value="patio">Pátio ou recreio</option>
+
+                                <option value="corredor">Corredores</option>
+
+                                <option value="banheiro">Banheiro</option>
+
+                                <option value="internet">Internet ou redes sociais</option>
+
+                                <option value="fora">Fora da escola</option>
+
+                                <option value="outro">Outro local</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- DATA -->
+                        <div class="form-group">
+
+                            <label for="report-date">Quando aconteceu? *</label>
+
+                            <select id="report-date" name="quando" required>
+
+                                <option value="">Selecione uma opção</option>
+
+                                <option value="hoje">Hoje</option>
+
+                                <option value="ontem">Ontem</option>
+
+                                <option value="semana">Nesta semana</option>
+
+                                <option value="mes">Neste mês</option>
+
+                                <option value="repetidas">Acontece repetidamente</option>
+
+                                <option value="antes">Há mais tempo</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- DESCRIÇÃO -->
+                        <div class="form-group">
+
+                            <label for="report-description">
+                                Conte o que aconteceu. *
+                            </label>
+
+                            <textarea
+                                id="report-description"
+                                name="descricao"
+                                rows="6"
+                                minlength="10"
+                                maxlength="2000"
+                                placeholder="Escreva com suas palavras. Se souber, conte quando aconteceu e se alguém presenciou."
+                                required
+                            ></textarea>
+
+                            <small class="form-hint">
+                                Não coloque dados pessoais de outras pessoas
+                                que não sejam necessários para entender a situação.
+                            </small>
+
+                        </div>
+
+
+                        <!-- SEGURANÇA -->
+                        <div class="report-safety-note">
+
+                            <span>⚠️</span>
+
+                            <p>
+                                Se você ou outra pessoa estiver em perigo
+                                agora, procure imediatamente um adulto
+                                de confiança ou um profissional da escola.
+                                Não espere pelo formulário.
+                            </p>
+
+                        </div>
+
+
+                        <!-- CONFIRMAÇÃO -->
+                        <label class="report-consent">
+
+                            <input
+                                type="checkbox"
+                                id="report-confirm"
+                                required
+                            >
+
+                            <span>
+                                Confirmo que as informações foram
+                                preenchidas de boa-fé e que desejo
+                                comunicar essa situação. *
+                            </span>
+
+                        </label>
+
+
+                        <button type="submit" class="btn btn-primary report-submit">
+                            Enviar relato
+                        </button>
+
+
+                        <p id="report-feedback" class="report-feedback" role="status" aria-live="polite"></p>
+
+                        <p class="form-disclaimer">
+                            Este formulário ainda está em fase de
+                            desenvolvimento. Nenhum relato será enviado
+                            ou armazenado até a integração com o sistema
+                            da escola.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="index.html" class="logo footer-logo">
+                    conecta<span>.</span>
+                </a>
+
+                <p>
+                    Juntos construímos uma escola
+                    mais segura, respeitosa e acolhedora.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+                <a href="conheca.html">Conheça o bullying</a>
+                <a href="ajuda.html">Como ajudar</a>
+                <a href="relato.html">Preciso de ajuda</a>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>© 2026 Conecta. Projeto de conscientização e combate ao bullying.</p>
+
+            <p>Feito com 💜 para transformar a convivência escolar.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

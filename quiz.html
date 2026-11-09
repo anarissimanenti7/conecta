@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz educativo | Conecta</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family= Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="js/main.js" defer></script>
+    <script src="js/quiz.js" defer></script>
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                conecta<span>.</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="conheca.html">Conheça o bullying</a></li>
+                <li><a href="ajuda.html">Como ajudar</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="mural.html">Mural</a></li>
+                <li><a href="login.html" class="nav-login">Área da escola</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- APRESENTAÇÃO -->
+        <section class="quiz-hero">
+
+            <div class="container">
+
+                <span class="tag">APRENDA DE FORMA DIVERTIDA</span>
+
+                <h1>
+                    Teste seus conhecimentos e
+                    <span>espalhe respeito!</span>
+                </h1>
+
+                <p>
+                    Responda às perguntas, descubra curiosidades
+                    e aprenda como construir uma escola melhor para todos.
+                </p>
+
+                <div class="quiz-hero-icon">🧠💜</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section class="quiz-section section">
+
+            <div class="container">
+
+                <div class="quiz-container">
+
+                    <div class="quiz-top">
+
+                        <div>
+                            <span class="quiz-label">DESAFIO CONECTA</span>
+                            <h2>Você sabe reconhecer o bullying?</h2>
+                        </div>
+
+                        <div class="quiz-counter" id="quiz-counter">
+                            1 de 8
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROGRESSO -->
+                    <div class="quiz-progress-area">
+
+                        <div class="quiz-progress-track">
+                            <div class="quiz-progress-bar" id="quiz-progress"></div>
+                        </div>
+
+                        <p id="quiz-progress-text">0% concluído</p>
+
+                    </div>
+
+
+                    <!-- PERGUNTA -->
+                    <div id="quiz-game">
+
+                        <div class="question-number" id="question-number">
+                            PERGUNTA 01
+                        </div>
+
+                        <h3 id="question-text">
+                            Carregando pergunta...
+                        </h3>
+
+                        <div class="quiz-options" id="quiz-options"></div>
+
+                        <div id="quiz-feedback" class="quiz-feedback" aria-live="polite" hidden>
+                        </div>
+
+                        <button id="next-question" class="btn btn-primary quiz-next" hidden>
+                            Próxima pergunta →
+                        </button>
+
+                    </div>
+
+
+                    <!-- RESULTADO -->
+                    <div id="quiz-result" class="quiz-result" hidden>
+
+                        <div class="result-icon" id="result-icon">🏆</div>
+
+                        <span class="quiz-label">SEU RESULTADO</span>
+
+                        <h2 id="result-title">Muito bem!</h2>
+
+                        <div class="result-score" id="result-score">
+                            0/8
+                        </div>
+
+                        <p id="result-message"></p>
+
+                        <div class="result-tip">
+                            <span>💜</span>
+                            <p>
+                                Lembre-se: aprender sobre respeito
+                                é um passo importante para combater o bullying.
+                            </p>
+                        </div>
+
+                        <button id="restart-quiz" class="btn btn-primary">
+                            Jogar novamente ↻
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="quiz-bottom-note">
+                    <span>🌱</span>
+                    <p>
+                        O objetivo não é apenas acertar as perguntas,
+                        mas aprender a reconhecer e combater situações
+                        de violência.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAMADA FINAL -->
+        <section class="knowledge-final">
+
+            <div class="container">
+
+                <span>💜</span>
+
+                <h2>Conhecimento também é uma forma de transformar o mundo.</h2>
+
+                <p>
+                    Compartilhe o respeito e ajude a construir
+                    uma escola mais acolhedora.
+                </p>
+
+                <a href="conheca.html" class="btn btn-white">
+                    Aprender mais sobre bullying
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <a href="index.html" class="logo footer-logo">
+                    conecta<span>.</span>
+                </a>
+
+                <p>
+                    Juntos construímos uma escola
+                    mais segura, respeitosa e acolhedora.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+                <a href="conheca.html">Conheça o bullying</a>
+                <a href="ajuda.html">Como ajudar</a>
+                <a href="relato.html">Preciso de ajuda</a>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>© 2026 Conecta. Projeto de conscientização e combate ao bullying.</p>
+
+            <p>Feito com 💜 para transformar a convivência escolar.</p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
