@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da Escola | Conecta</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">conecta<span>.</span></a>
+
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="conheca.html">Conheça</a>
+                <a href="ajuda.html">Preciso de ajuda</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="mural.html">Mural</a>
+                <a href="login.html" class="nav-login">Sair</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="container">
+
+            <section class="dashboard-welcome">
+                <div>
+                    <span class="section-tag">Área dos profissionais</span>
+                    <h1>Painel da escola</h1>
+                    <p>Acompanhe os indicadores e fortaleça uma convivência mais respeitosa.</p>
+                </div>
+
+                <div class="dashboard-date">
+                    <span>📅</span>
+                    <div>
+                        <strong>Visão geral</strong>
+                        <small>Dados demonstrativos</small>
+                    </div>
+                </div>
+            </section>
+
+            <div class="demo-warning">
+                <span>ℹ️</span>
+                <p>
+                    <strong>Modo de demonstração:</strong>
+                    os números desta página são fictícios e não representam dados reais da escola.
+                </p>
+            </div>
+
+            <section class="dashboard-stats">
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Relatos recebidos</span>
+                        <span class="stat-icon purple">📩</span>
+                    </div>
+                    <strong class="stat-number" id="total-relatos">24</strong>
+                    <small>Exemplo de total registrado</small>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Aguardando análise</span>
+                        <span class="stat-icon yellow">⏳</span>
+                    </div>
+                    <strong class="stat-number" id="relatos-pendentes">8</strong>
+                    <small>Exemplo de relatos pendentes</small>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Em acompanhamento</span>
+                        <span class="stat-icon blue">🤝</span>
+                    </div>
+                    <strong class="stat-number" id="relatos-acompanhamento">10</strong>
+                    <small>Exemplo de casos acompanhados</small>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Ações realizadas</span>
+                        <span class="stat-icon green">🌱</span>
+                    </div>
+                    <strong class="stat-number" id="acoes-realizadas">6</strong>
+                    <small>Exemplo de ações preventivas</small>
+                </article>
+            </section>
+
+            <section class="dashboard-grid">
+
+                <article class="dashboard-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="section-tag">Acompanhamento</span>
+                            <h2>Situação dos relatos</h2>
+                        </div>
+                    </div>
+
+                    <div class="status-chart" id="grafico-status">
+                        <div class="status-item">
+                            <div class="status-label">
+                                <span class="status-dot pending"></span>
+                                <span>Aguardando análise</span>
+                                <strong>8</strong>
+                            </div>
+                            <div class="status-track">
+                                <div class="status-fill pending-fill" style="width: 33.33%"></div>
+                            </div>
+                        </div>
+
+                        <div class="status-item">
+                            <div class="status-label">
+                                <span class="status-dot progress"></span>
+                                <span>Em acompanhamento</span>
+                                <strong>10</strong>
+                            </div>
+                            <div class="status-track">
+                                <div class="status-fill progress-fill" style="width: 41.67%"></div>
+                            </div>
+                        </div>
+
+                        <div class="status-item">
+                            <div class="status-label">
+                                <span class="status-dot completed"></span>
+                                <span>Encaminhados</span>
+                                <strong>6</strong>
+                            </div>
+                            <div class="status-track">
+                                <div class="status-fill completed-fill" style="width: 25%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="panel-note">
+                        Indicadores ilustrativos. Os números reais dependerão dos registros da escola.
+                    </p>
+                </article>
+
+                <article class="dashboard-panel action-panel">
+                    <span class="section-tag">Acesso rápido</span>
+                    <h2>O que deseja fazer?</h2>
+
+                    <a href="relatos.html" class="dashboard-action">
+                        <span class="action-icon">📋</span>
+                        <span>
+                            <strong>Gerenciar relatos</strong>
+                            <small>Consultar e acompanhar registros</small>
+                        </span>
+                        <span class="action-arrow">→</span>
+                    </a>
+
+                    <a href="termometro.html" class="dashboard-action">
+                        <span class="action-icon">🌡️</span>
+                        <span>
+                            <strong>Termômetro da escola</strong>
+                            <small>Visualizar a pesquisa demonstrativa</small>
+                        </span>
+                        <span class="action-arrow">→</span>
+                    </a>
+
+                    <a href="mural.html" class="dashboard-action">
+                        <span class="action-icon">💜</span>
+                        <span>
+                            <strong>Mural da gentileza</strong>
+                            <small>Conhecer as mensagens positivas</small>
+                        </span>
+                        <span class="action-arrow">→</span>
+                    </a>
+                </article>
+
+            </section>
+
+            <section class="dashboard-panel prevention-panel">
+                <div>
+                    <span class="section-tag">Prevenção</span>
+                    <h2>Combater o bullying é um trabalho coletivo.</h2>
+                    <p>
+                        Promova conversas, incentive o respeito às diferenças,
+                        acolha quem precisa de ajuda e acompanhe as situações
+                        com responsabilidade.
+                    </p>
+                    <a href="ajuda.html" class="btn btn-primary">Ver orientações</a>
+                </div>
+                <div class="prevention-illustration">🤝💜</div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>© 2026 Conecta. Respeito é o nosso ponto de partida.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/painel.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural da Gentileza | Conecta</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">conecta<span>.</span></a>
+
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="conheca.html">Conheça</a>
+                <a href="ajuda.html">Preciso de ajuda</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="mural.html" class="active">Mural</a>
+                <a href="login.html" class="nav-login">Área da escola</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="mural-hero">
+            <div class="container">
+                <span class="section-tag">Gentileza transforma</span>
+                <h1>Pequenas atitudes,<br><span>grandes mudanças.</span></h1>
+                <p>
+                    Um espaço para espalhar palavras positivas,
+                    reconhecer boas atitudes e lembrar que respeito
+                    também se demonstra nas pequenas coisas.
+                </p>
+                <a href="#enviar-mensagem" class="btn btn-primary">Compartilhar gentileza</a>
+            </div>
+        </section>
+
+        <section class="mural-content">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-tag">Inspire alguém</span>
+                    <h2>Gentileza gera gentileza</h2>
+                    <p>Veja algumas mensagens para deixar seu dia mais leve.</p>
+                </div>
+
+                <div class="kindness-grid" id="mensagens-exemplo">
+                    <article class="kindness-card">
+                        <span class="kindness-icon">💜</span>
+                        <p>"Você não precisa ser perfeito para ser incrível. Seja você mesmo!"</p>
+                        <span class="kindness-author">— Uma mensagem de carinho</span>
+                    </article>
+
+                    <article class="kindness-card kindness-green">
+                        <span class="kindness-icon">🌻</span>
+                        <p>"Um simples bom dia pode mudar o dia de alguém."</p>
+                        <span class="kindness-author">— Uma mensagem de carinho</span>
+                    </article>
+
+                    <article class="kindness-card kindness-blue">
+                        <span class="kindness-icon">⭐</span>
+                        <p>"Respeitar as diferenças é uma forma de demonstrar amizade."</p>
+                        <span class="kindness-author">— Uma mensagem de carinho</span>
+                    </article>
+                </div>
+
+                <section class="mural-form-section" id="enviar-mensagem">
+                    <div class="mural-form-intro">
+                        <span class="section-tag">Sua vez!</span>
+                        <h2>Espalhe uma mensagem positiva</h2>
+                        <p>
+                            Escreva algo gentil, compartilhe uma atitude positiva
+                            ou deixe uma mensagem de incentivo para a comunidade escolar.
+                        </p>
+                        <div class="mural-reminder">
+                            <span>💡</span>
+                            <p>Não informe nomes completos, telefones, endereços ou dados pessoais seus ou de outras pessoas.</p>
+                        </div>
+                    </div>
+
+                    <form id="form-mural" class="mural-form">
+                        <div class="form-group">
+                            <label for="apelido">Como deseja ser identificado? (opcional)</label>
+                            <input
+                                type="text"
+                                id="apelido"
+                                maxlength="30"
+                                placeholder="Ex.: Estudante anônimo"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="categoria">Tipo de mensagem</label>
+                            <select id="categoria" required>
+                                <option value="">Selecione uma categoria</option>
+                                <option value="Incentivo">Mensagem de incentivo</option>
+                                <option value="Gratidão">Gratidão</option>
+                                <option value="Amizade">Amizade</option>
+                                <option value="Respeito">Respeito e inclusão</option>
+                                <option value="Boa atitude">Boa atitude</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Sua mensagem</label>
+                            <textarea
+                                id="mensagem"
+                                rows="5"
+                                maxlength="250"
+                                placeholder="Escreva sua mensagem positiva aqui..."
+                                required
+                            ></textarea>
+                            <small id="contador-mensagem">0/250 caracteres</small>
+                        </div>
+
+                        <label class="mural-check">
+                            <input type="checkbox" id="confirmacao" required>
+                            <span>Minha mensagem é respeitosa e não expõe informações pessoais de ninguém.</span>
+                        </label>
+
+                        <button type="submit" class="btn btn-primary mural-submit">
+                            Enviar para análise
+                        </button>
+
+                        <div id="retorno-mural" class="mural-feedback" aria-live="polite"></div>
+
+                        <p class="mural-disclaimer">
+                            As mensagens precisam ser analisadas antes de qualquer publicação.
+                            Esta versão é uma demonstração e ainda não salva os envios.
+                        </p>
+                    </form>
+                </section>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <a href="index.html" class="logo footer-logo">conecta<span>.</span></a>
+                <p>Juntos contra o bullying.</p>
+            </div>
+            <div class="footer-links">
+                <a href="conheca.html">Conheça o bullying</a>
+                <a href="ajuda.html">Preciso de ajuda</a>
+                <a href="relato.html">Fazer um relato</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Conecta. Respeito é o nosso ponto de partida.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/mural.js" defer></script>
+</body>
+</html>

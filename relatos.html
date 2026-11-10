@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Relatos | Conecta</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="reports-page">
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">conecta<span>.</span></a>
+
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="painel.html">Painel</a>
+                <a href="relatos.html" class="active">Relatos</a>
+                <a href="login.html" class="nav-login">Sair</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="reports-main">
+        <div class="container">
+
+            <div class="reports-header">
+                <div>
+                    <span class="section-tag">Área dos profissionais</span>
+                    <h1>Gerenciar relatos</h1>
+                    <p>Consulte e acompanhe as situações registradas no Conecta.</p>
+                </div>
+
+                <a href="painel.html" class="btn btn-primary">← Voltar ao painel</a>
+            </div>
+
+            <div class="reports-warning">
+                <span>🔒</span>
+                <p>
+                    <strong>Ambiente demonstrativo:</strong>
+                    os registros exibidos são fictícios. Relatos reais devem ser tratados
+                    somente por profissionais autorizados e com cuidado para preservar a privacidade.
+                </p>
+            </div>
+
+            <section class="reports-summary">
+                <div class="report-summary-card">
+                    <span>Total de registros</span>
+                    <strong id="resumo-total">4</strong>
+                </div>
+
+                <div class="report-summary-card">
+                    <span>Aguardando análise</span>
+                    <strong id="resumo-pendente">2</strong>
+                </div>
+
+                <div class="report-summary-card">
+                    <span>Em acompanhamento</span>
+                    <strong id="resumo-acompanhamento">1</strong>
+                </div>
+
+                <div class="report-summary-card">
+                    <span>Encaminhados</span>
+                    <strong id="resumo-encaminhado">1</strong>
+                </div>
+            </section>
+
+            <section class="reports-list-section">
+                <div class="reports-list-heading">
+                    <div>
+                        <h2>Registros recebidos</h2>
+                        <p>Use os filtros para localizar os registros demonstrativos.</p>
+                    </div>
+                </div>
+
+                <div class="reports-filters">
+                    <div class="report-search">
+                        <label for="buscar-relato">Buscar</label>
+                        <input
+                            type="search"
+                            id="buscar-relato"
+                            placeholder="Buscar pelo código ou tipo..."
+                        >
+                    </div>
+
+                    <div class="report-filter">
+                        <label for="filtro-status">Situação</label>
+                        <select id="filtro-status">
+                            <option value="todos">Todas as situações</option>
+                            <option value="Pendente">Aguardando análise</option>
+                            <option value="Em acompanhamento">Em acompanhamento</option>
+                            <option value="Encaminhado">Encaminhado</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="reports-list" id="lista-relatos">
+                    <!-- Os registros serão inseridos pelo JavaScript -->
+                </div>
+
+                <div id="nenhum-relato" class="no-reports" hidden>
+                    <span>🔎</span>
+                    <h3>Nenhum registro encontrado</h3>
+                    <p>Tente mudar o filtro ou a palavra pesquisada.</p>
+                </div>
+            </section>
+
+            <div class="reports-guidance">
+                <span>💜</span>
+                <div>
+                    <h3>O acolhimento vem primeiro</h3>
+                    <p>
+                        Todo relato deve ser tratado com seriedade, escuta e discrição.
+                        Evite julgamentos, exposição pública ou promessas de sigilo absoluto.
+                        Situações de risco exigem encaminhamento imediato conforme os protocolos da escola.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>© 2026 Conecta. Respeito é o nosso ponto de partida.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/gerenciar-relatos.js" defer></script>
+</body>
+</html>

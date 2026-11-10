@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área da Escola | Conecta</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">conecta<span>.</span></a>
+
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="conheca.html">Conheça</a>
+                <a href="ajuda.html">Preciso de ajuda</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="mural.html">Mural</a>
+                <a href="login.html" class="nav-login active">Área da escola</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="login-main">
+        <div class="login-container">
+
+            <div class="login-side">
+                <span class="section-tag">Espaço dos profissionais</span>
+
+                <h1>Cuidar da convivência também é nosso papel.</h1>
+
+                <p>
+                    Acesse a área da escola para acompanhar as ações de
+                    prevenção, acolhimento e combate ao bullying.
+                </p>
+
+                <div class="login-illustration">
+                    <span>💜</span>
+                    <div>
+                        <strong>Uma escola melhor começa com respeito.</strong>
+                        <p>Juntos, construímos um ambiente mais seguro.</p>
+                    </div>
+                </div>
+
+                <a href="index.html" class="login-back">← Voltar para o início</a>
+            </div>
+
+            <div class="login-box">
+                <div class="login-heading">
+                    <span class="login-icon">🔐</span>
+                    <h2>Bem-vindo(a)!</h2>
+                    <p>Entre com seus dados profissionais.</p>
+                </div>
+
+                <form id="form-login">
+
+                    <div class="form-group">
+                        <label for="email-login">E-mail</label>
+                        <input
+                            type="email"
+                            id="email-login"
+                            placeholder="seuemail@escola.com"
+                            autocomplete="username"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="senha-login">Senha</label>
+
+                        <div class="password-wrapper">
+                            <input
+                                type="password"
+                                id="senha-login"
+                                placeholder="Digite sua senha"
+                                autocomplete="current-password"
+                                required
+                            >
+                            <button
+                                type="button"
+                                id="mostrar-senha"
+                                class="show-password"
+                                aria-label="Mostrar senha"
+                            >Mostrar</button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary login-submit">
+                        Entrar na área da escola
+                    </button>
+
+                    <div id="retorno-login" class="login-feedback" aria-live="polite"></div>
+
+                </form>
+
+                <div class="login-security">
+                    <span>🛡️</span>
+                    <p>
+                        Área reservada aos profissionais autorizados pela escola.
+                        Não compartilhe seus dados de acesso.
+                    </p>
+                </div>
+
+                <p class="login-help">
+                    Precisa de ajuda? Procure a coordenação da sua escola.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-bottom">
+            <p>© 2026 Conecta. Respeito é o nosso ponto de partida.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/login.js" defer></script>
+</body>
+</html>

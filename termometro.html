@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termômetro da Escola | Conecta</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">conecta<span>.</span></a>
+
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+            <nav class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="conheca.html">Conheça</a>
+                <a href="ajuda.html">Preciso de ajuda</a>
+                <a href="quiz.html">Quiz</a>
+                <a href="mural.html">Mural</a>
+                <a href="login.html" class="nav-login">Área da escola</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="thermo-hero">
+            <div class="container">
+                <span class="section-tag">Sua opinião importa</span>
+                <h1>Como está a convivência<br><span>na sua escola?</span></h1>
+                <p>
+                    Responda à pesquisa e ajude a construir um ambiente
+                    mais respeitoso, acolhedor e seguro para todos.
+                </p>
+            </div>
+        </section>
+
+        <section class="thermo-content">
+            <div class="container">
+
+                <div class="thermo-info">
+                    <span>🔒</span>
+                    <div>
+                        <h3>Pesquisa anônima</h3>
+                        <p>
+                            Não pedimos seu nome ou e-mail nesta demonstração.
+                            As respostas devem ser analisadas de forma coletiva,
+                            sem identificar estudantes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="thermo-card">
+                    <div class="thermo-card-heading">
+                        <span class="section-tag">Pesquisa escolar</span>
+                        <h2>Queremos ouvir você!</h2>
+                        <p>Responda com sinceridade. Não existem respostas certas ou erradas.</p>
+                    </div>
+
+                    <form id="form-termometro">
+
+                        <div class="thermo-question">
+                            <label>1. Como você se sente na sua escola?</label>
+                            <div class="thermo-options">
+                                <label><input type="radio" name="sentimento" value="Muito bem" required> 😊 Muito bem</label>
+                                <label><input type="radio" name="sentimento" value="Bem"> 🙂 Bem</label>
+                                <label><input type="radio" name="sentimento" value="Mais ou menos"> 😐 Mais ou menos</label>
+                                <label><input type="radio" name="sentimento" value="Mal"> 🙁 Mal</label>
+                                <label><input type="radio" name="sentimento" value="Muito mal"> 😟 Muito mal</label>
+                            </div>
+                        </div>
+
+                        <div class="thermo-question">
+                            <label>2. Você sente que é respeitado pelos colegas?</label>
+                            <div class="thermo-options">
+                                <label><input type="radio" name="respeito" value="Sempre" required> Sempre</label>
+                                <label><input type="radio" name="respeito" value="Na maioria das vezes"> Na maioria das vezes</label>
+                                <label><input type="radio" name="respeito" value="Às vezes"> Às vezes</label>
+                                <label><input type="radio" name="respeito" value="Raramente"> Raramente</label>
+                                <label><input type="radio" name="respeito" value="Nunca"> Nunca</label>
+                            </div>
+                        </div>
+
+                        <div class="thermo-question">
+                            <label>3. Você já presenciou alguma situação de bullying na escola?</label>
+                            <div class="thermo-options">
+                                <label><input type="radio" name="presenciou" value="Sim" required> Sim</label>
+                                <label><input type="radio" name="presenciou" value="Não"> Não</label>
+                                <label><input type="radio" name="presenciou" value="Não tenho certeza"> Não tenho certeza</label>
+                            </div>
+                        </div>
+
+                        <div class="thermo-question">
+                            <label>4. Você sabe a quem pedir ajuda se sofrer ou presenciar bullying?</label>
+                            <div class="thermo-options">
+                                <label><input type="radio" name="ajuda" value="Sim" required> Sim</label>
+                                <label><input type="radio" name="ajuda" value="Não"> Não</label>
+                                <label><input type="radio" name="ajuda" value="Tenho dúvidas"> Tenho dúvidas</label>
+                            </div>
+                        </div>
+
+                        <div class="thermo-question">
+                            <label>5. Você considera que sua escola promove o respeito e a inclusão?</label>
+                            <div class="thermo-options">
+                                <label><input type="radio" name="inclusao" value="Muito" required> Muito</label>
+                                <label><input type="radio" name="inclusao" value="Razoavelmente"> Razoavelmente</label>
+                                <label><input type="radio" name="inclusao" value="Pouco"> Pouco</label>
+                                <label><input type="radio" name="inclusao" value="Não"> Não</label>
+                            </div>
+                        </div>
+
+                        <div class="thermo-question">
+                            <label for="sugestao">6. O que poderia melhorar na convivência da escola? (opcional)</label>
+                            <textarea
+                                id="sugestao"
+                                name="sugestao"
+                                rows="4"
+                                maxlength="300"
+                                placeholder="Compartilhe uma sugestão..."
+                            ></textarea>
+                        </div>
+
+                        <label class="thermo-check">
+                            <input type="checkbox" id="confirmacao-pesquisa" required>
+                            <span>Confirmo que respondi de forma respeitosa e consciente.</span>
+                        </label>
+
+                        <button type="submit" class="btn btn-primary thermo-submit">
+                            Enviar minhas respostas
+                        </button>
+
+                        <div id="retorno-termometro" class="thermo-feedback" aria-live="polite"></div>
+
+                        <p class="thermo-disclaimer">
+                            Esta é uma demonstração. As respostas ainda não são armazenadas
+                            nem enviadas para a escola.
+                        </p>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <a href="index.html" class="logo footer-logo">conecta<span>.</span></a>
+                <p>Juntos contra o bullying.</p>
+            </div>
+            <div class="footer-links">
+                <a href="conheca.html">Conheça o bullying</a>
+                <a href="ajuda.html">Preciso de ajuda</a>
+                <a href="relato.html">Fazer um relato</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© 2026 Conecta. Respeito é o nosso ponto de partida.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/termometro.js" defer></script>
+</body>
+</html>
